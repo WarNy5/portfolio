@@ -5,95 +5,121 @@ li {list-style: none;}
 a {text-decoration: none; color: #333;}
 html, body {
     color: #333;
-    min-width: 1280px;
+    min-width: 1920px;
 }
 
 /* header */
 header {
-    height: 80px;
-    line-height: 80px;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: #333;
+    position: fixed;
+    z-index: 9;
 }
 header div {
-    width: 1280px;
+    width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 header div h1 a {
     font-size: 25px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
 }
 header div a {
     font-size: 20px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
 }
 
 /* .main_visual */
 .main_visual {
     width: 100%;
     /* height: 100vh; */
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 80px); */
     /* 높이 : 브라우저 전체높이 - 헤더값 */
-    position: relative;
+    /* position: relative; */
+    padding-top: 100px;
 }
 .main_visual figure {
     width: 100%;
     height: 100%;
+    margin-bottom: -4px;
 }
-.main_visual figure img {
+.main_visual figure video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 .main_visual .title {
     width: 1280px;
-    height: 100%;
+    height: 1084px;
     /* background-color: red; */
     position: absolute;
-    left: 50%;
+    left: 10%;
     top: 0;
     transform: translateX(-50%);
     /* 변형 : 이동 X축 -> 본인이 가진 너비의
     반만큼 역으로 이동
     */
-    color: #fff;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    padding-top: 100px;
 }
 .main_visual .title h2 {
     width: 100%;
     font-size: 60px;
+    /* text-align: center; */
+    margin-bottom: 40px;
+    font-family: 'Press Start 2P', cursive;
 }
 .main_visual .title p {
     width: 100%;
     font-size: 30px;
+    /* text-align: center; */
     margin-bottom: 40px;
+    font-family: 'Press Start 2P', cursive;
 }
 .main_visual .title a {
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: bold;
     color: #fff;
-    background-color: royalblue;
+    background-color: rgb(253, 30, 30);
     text-align: center;
     border-radius: 5px;
+    display: block;
+    /* margin: 0 auto; */
 }
 
 /* .best_v */
 .best_v {
+    width: 1920px;
+    height: 889px;
+    background: url('images/background_00.jpg') center center / cover no-repeat;
     padding: 100px 0;
 }
 .best_v .title {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 140px 0 40px;
+    color: #fff;
 }
 .best_v .title h3 {
     font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 20px;
 }
 .best_v .title p {
-    font-size: 20px;
+    font-size: 25px;
+    font-family: '양진체';
 }
 .best_v .cont {
-    width: 1280px;
+    width: 1440px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -117,22 +143,34 @@ header div a {
 }
 .best_v .cont .info {
     width: 40%;
+    color: #fff;
 }
 .best_v .cont .info h4 {
     font-size: 30px;
     margin-bottom: 5px;
+    font-family: 'Fredoka One';
+}
+.best_v .cont .info p {
+    font-family: 'yg-jalnan';
 }
 .best_v .cont .info p:nth-of-type(2) {
-    margin: 20px 0 40px;
+    margin: 20px 0 20px;
 }
 .best_v .cont .info dl {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-family: 'yg-jalnan';
 }
 .best_v .cont .info dl dt {
-    font-weight: bold;
-    width: 100px;
+    width: 26%;
+    font-size: 21px;
 }
+.best_v .cont .info dl dd {
+    margin-left: 22px;
+    font-size: 16px;
+    width: 70%;
+}
+
 .best_v .cont .info ul {
     display: flex;
 }
@@ -143,35 +181,49 @@ header div a {
     box-sizing: border-box;
     display: block;
     padding: 0 25px;
-    margin-right: 15px;  
+    margin-right: 15px;
+    font-family: 'yg-jalnan'; 
+}
+.best_v .cont .info ul li:nth-child(1) {
+    margin-right: 10px;
 }
 .best_v .cont .info ul li:nth-child(1) a {
     background-color: rgb(46, 32, 245);
     color: #fff;
+    border-radius: 25px;
 }
 .best_v .cont .info ul li:nth-child(2) a {
     background-color: rgb(17, 160, 255);
     color: #fff;
+    border-radius: 25px;
 }
 
 /* .motion */
 .motion {
+    width: 1920px;
+    height: 889px;
+    background: url('images/background_03.jpg') center center / cover no-repeat;
     padding: 100px 0;
 }
 .motion .title {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 50px 0 20px;
+    color: #fff;
 }
 .motion .title h3 {
     font-size: 45px;
+    margin-bottom: 10px;
+    font-family: 'Press Start 2P', cursive;
 }
 .motion .title p {
-    font-size: 20px;
+    font-size: 21px;
+    font-family: '양진체';
 }
 .motion .list {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    color: #fff;
 }
 .motion .list li {
     cursor: pointer;
@@ -182,6 +234,8 @@ header div a {
     padding: 0 30px;
     margin: 0 5px;
     box-sizing: border-box;
+    border-radius: 25px;
+    font-family: 'yg-jalnan';
 }
 .motion .list li.on {
     box-shadow: 2px 3px 15px rgba(0, 136, 255, 0.308);
@@ -209,18 +263,27 @@ header div a {
 }
 .motion .list_cont .items .info {
     padding: 30px;
+    color: #fff;
+}
+.motion .list_cont .items .info p {
+    font-weight: bold;
 }
 .motion .list_cont .items .info h4 {
     font-size: 30px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 .motion .list_cont .items .info dl {
     display: flex;
     margin-top: 10px;
+    font-family: 'yg-jalnan';
 }
 .motion .list_cont .items .info dl dt {
     width: 20%;
     font-weight: bold;
+}
+.motion .list_cont .items .info dl dd a {
+    color: #fff;
 }
 .motion .list_cont .items .info dl dd:hover a {
     text-decoration: underline;
@@ -246,25 +309,33 @@ header div a {
 
 /* .g_ver05 */
 .g_ver05 {
-    background-color: #eee;
+    width: 1920px;
+    height: 889px;
+    background: url('images/background_00.jpg') center center / cover no-repeat;
     padding: 100px 0;
 }
 .g_ver05 .title {
     text-align: center;
     width: 1280px;
     margin: 0 auto;
+    margin-top: 100px;
+    color: #fff;
 }
 .g_ver05 .title h3 {
     font-size: 45px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 20px;
 }
 .g_ver05 .title p {
-    font-size: 20px;
+    font-size: 21px;
+    font-family: '양진체';
 }
 .g_ver05 .title em {
     font-size: 13px;
     text-align: right;
     margin: 40px 0 10px;
     display: block;
+    font-weight: bold;
 }
 .g_ver05 .cont {
     width: 1280px;
@@ -277,6 +348,7 @@ header div a {
     background-color: #fff;
     display: flex;
     align-items: center;
+
 }
 .g_ver05 .cont .items figure {
     width: 60%;
@@ -297,15 +369,21 @@ header div a {
 }
 .g_ver05 .cont .items .info h4 {
     font-size: 30px;
+    margin-top: 10px;
+    font-family: 'Fredoka One';
 }
 
 /* .about */
 .about {
+    width: 1920px;
+    height: 889px;
+    background: url('images/background_02.jpg') center center / cover no-repeat;
     padding: 100px 0;
 }
 .about .cont {
     width: 1280px;
     margin: 0 auto;
+    margin-top: 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -318,12 +396,14 @@ header div a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
 }
 .about .cont .info {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    color: #fff;
 }
 .about .cont .info div {
     width: 45%;
@@ -332,20 +412,42 @@ header div a {
 }
 .about .cont .info div h4 {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-family: 'Press Start 2P', cursive;
 }
 .about .cont .info div p {
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: '양진체';
 }
 .about .cont .info div dl dt {
     font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: '양진체';
 }
 .about .cont .info div dl dd {
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-family: '양진체';
+}
+.about .cont .info div:nth-child(1) a {
+    color: rgb(252, 252, 109);
+    font-family: '양진체';
+}
+.about .cont .info div:nth-child(2) dl dd {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.about .cont .info div:nth-child(1) {
+    text-align: center;
+}
+.about .cont .info div:nth-child(2) {
+    text-align: center;
+}
+.about .cont .info div:nth-child(3) {
+    text-align: center;
+    margin-left: 200px;
 }
 
 /* footer */
@@ -356,12 +458,13 @@ footer {
     padding: 100px 0;
 }
 footer ul li {
-    width: 250px;
+    width: 300px;
     height: 50px;
     line-height: 50px;
     border: 1px solid #fff;
     border-radius: 50px;
-    margin: 10px auto;
+    margin: 15px auto;
+    font-family: 'yg-jalnan';
 }
 footer ul li a {
     color: #fff;
