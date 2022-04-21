@@ -57,7 +57,7 @@ header div a {
     height: 1084px;
     /* background-color: red; */
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 0;
     transform: translateX(-50%);
     /* 변형 : 이동 X축 -> 본인이 가진 너비의
@@ -484,6 +484,7 @@ footer p {
 
 @media screen and (max-width: 1280px) {
     .main_visual .title {
-        left: 20%;
+        height: 1090px;
+        left: 25%;
     }
 }
