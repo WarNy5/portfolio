@@ -481,3 +481,9 @@ footer p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.507);
 }
+
+@media screen and (max-width: 1280px) {
+    .main_visual .title {
+        left: 20%;
+    }
+}
