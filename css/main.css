@@ -5,7 +5,7 @@ li {list-style: none;}
 a {text-decoration: none; color: #333;}
 html, body {
     color: #333;
-    min-width: 1920px;
+    /* min-width: 1920px; */
 }
 
 /* header */
@@ -44,7 +44,7 @@ header div a {
     padding-top: 100px;
 }
 .main_visual figure {
-    width: 100%;
+    width: 1920px;
     height: 100%;
     margin-bottom: -4px;
 }
@@ -452,6 +452,7 @@ header div a {
 
 /* footer */
 footer {
+    width: 1920px;
     background-color: #333;
     text-align: center;
     color: #fff;
@@ -480,3 +481,19 @@ footer p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.507);
 }
+
+/* 반응형 제작
+해상도 가로 960px 이하일 때 적용되는 스타일 */
+@media screen and (max-width: 1280px) {
+    /* 브라우저 너비 1280px 이하일 때 스타일 */
+    /* header div {width: 100%;} */
+}/* 해상도 1280px 이하 */
+
+@media screen and (max-width: 960px) {
+    /* 브라우저 너비 960px 이하일 때 스타일 */
+    .main_visual .title {
+        width: 100%;
+        left: 20%;
+    }
+    /* .best_v .cont {flex-wrap: wrap;} */
+}/* 해상도 960px 이하 */
